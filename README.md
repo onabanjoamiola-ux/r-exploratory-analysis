@@ -44,6 +44,14 @@ Exploratory analysis of ocean and atmospheric measurements from the TAO (Tropica
 
 **Key findings:** Temperatures are highest in the western Pacific and decrease eastward. Both air and sea surface temperatures follow a clear annual cycle in the equatorial region, peaking around April–May.
 
+### Outputs
+
+![Buoy Locations](plots/el_nino/buoy_locations.png)
+![Air Temperature by Region](plots/el_nino/air_temp_by_region.png)
+![Sea Surface Temperature Heatmap](plots/el_nino/sea_surface_temp_heatmap.png)
+![Seasonal Cycle Niño 3.4](plots/el_nino/seasonal_cycle_nino34.png)
+![Long Term SST Trend](plots/el_nino/longterm_sst_trend.png)
+
 ---
 
 ### 2. Glass Identification (`glass_identification_analysis.R`)
@@ -58,6 +66,14 @@ EDA of the UCI Glass Identification dataset, exploring how chemical composition 
 - Silicon and Calcium vs Refractive Index scatter plot by glass type
 
 **Key findings:** Calcium shows a strong positive relationship with refractive index while silicon shows a negative one. Together, these two oxides provide the clearest separation between glass types.
+
+### Outputs
+
+![Glass Type Distribution](plots/glass/glass_type_distribution.png)
+![Refractive Index by Type](plots/glass/refractive_index_by_type.png)
+![Mean Chemical Composition](plots/glass/mean_chemical_composition.png)
+![Correlation Heatmap](plots/glass/correlation_heatmap.png)
+![Silicon and Calcium vs RI](plots/glass/si_ca_vs_ri.png)
 
 ---
 
@@ -74,6 +90,14 @@ EDA of the Cleveland Heart Disease dataset, examining clinical and demographic f
 
 **Key findings:** Heart disease is more prevalent in male patients. ST depression during exercise (oldpeak) and number of major vessels (ca) show the strongest associations with disease severity. Patients with disease achieve lower maximum heart rates.
 
+### Outputs
+
+![Prevalence by Sex](plots/heart_disease/prevalence_by_sex.png)
+![Correlation Matrix](plots/heart_disease/correlation_matrix.png)
+![ST Depression by Sex](plots/heart_disease/st_depression_by_sex.png)
+![Multivariate Predictors](plots/heart_disease/multivariate_predictors.png)
+![Max Heart Rate by Disease](plots/heart_disease/max_heart_rate_by_disease.png)
+
 ---
 
 ### 4. Wine Quality (`wine_quality_analysis.R`)
@@ -89,6 +113,14 @@ EDA of the UCI Wine Quality dataset (red and white wines), exploring the relatio
 
 **Key findings:** Alcohol content is the strongest single predictor of wine quality. Higher quality wines consistently show higher alcohol, lower density, and lower volatile acidity. Quality scores cluster around 5–6, with extreme ratings being rare.
 
+### Outputs
+
+![Quality Distribution](plots/wine_quality/quality_distribution.png)
+![Average Chemical Profile](plots/wine_quality/avg_chemical_profile.png)
+![Correlation Matrix](plots/wine_quality/correlation_matrix.png)
+![Alcohol by Quality](plots/wine_quality/alcohol_by_quality.png)
+![Violin Alcohol Quality](plots/wine_quality/violin_alcohol_quality.png)
+
 ---
 
 ## Setup & Usage
@@ -96,7 +128,6 @@ EDA of the UCI Wine Quality dataset (red and white wines), exploring the relatio
 ### Requirements
 
 Install the required R packages:
-
 ```r
 install.packages(c("ggplot2", "dplyr", "GGally", "maps", "reshape2"))
 ```
@@ -115,7 +146,6 @@ Each script reads from the following publicly available datasets — download an
 ### Running a script
 
 Open R or RStudio, set your working directory to where the data files are, then run:
-
 ```r
 source("el_nino_analysis.R")
 ```
